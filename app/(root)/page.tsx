@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <main className="p-6">
             {/* <UserButton afterSignOutUrl='/' /> */}
-            <Modal title='Eshop' description='Testing the store' isOpen onClose={() => { }}>
+            <Modal title='E-shop' description='Testing the store' isOpen onClose={() => { }}>
                 children
             </Modal>
         </main>
