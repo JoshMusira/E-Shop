@@ -15,10 +15,5 @@ export default function Home() {
         }
     }, [isOpen, onOpen])
 
-    return (
-        <div className="p-6">
-            Root Page
-
-        </div>
-    )
+    return null
 }
