@@ -55,12 +55,12 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
     const onSubmit = async (data: SettingsFormValues) => {
         try {
             setLoading(true);
-            
+            console.log(data)
         } catch (error) {
-            
-        }finally {
+
+        } finally {
             setLoading(false);
-          }
+        }
     }
 
     return (
