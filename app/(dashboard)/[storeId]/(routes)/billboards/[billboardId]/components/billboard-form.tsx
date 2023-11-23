@@ -23,7 +23,7 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { Heading } from "@/components/ui/Heading"
 import { AlertModal } from "@/components/modals/alert-modal"
-// import ImageUpload from "@/components/ui/image-upload"
+import ImageUpload from "@/components/ui/image-upload"
 
 const formSchema = z.object({
   label: z.string().min(1),
@@ -122,12 +122,12 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
               <FormItem>
                 <FormLabel>Background image</FormLabel>
                 <FormControl>
-                  {/* <ImageUpload
+                  <ImageUpload
                     value={field.value ? [field.value] : []}
                     disabled={loading}
                     onChange={(url) => field.onChange(url)}
                     onRemove={() => field.onChange('')}
-                  /> */}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
