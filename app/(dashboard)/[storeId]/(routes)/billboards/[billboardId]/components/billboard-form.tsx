@@ -76,6 +76,7 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
     }
   };
 
+
   const onDelete = async () => {
     try {
       setLoading(true);
