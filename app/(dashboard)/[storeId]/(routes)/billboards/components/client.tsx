@@ -11,7 +11,7 @@ import { Heading } from "@/components/ui/Heading";
 import { Billboard } from "@prisma/client";
 import { BillboardColumn, columns } from "./columns";
 import { DataTable } from "@/components/ui/data-table";
-// import { ApiList } from "@/components/ui/api-list";
+import { ApiList } from "@/components/ui/api-list";
 
 // import { columns, BillboardColumn } from "./columns";
 
@@ -36,9 +36,9 @@ export const BillboardClient: React.FC<BillboardClientProps> = ({
             </div>
             <Separator />
             <DataTable searchKey="label" columns={columns} data={data} />
-            {/* <Heading title="API" description="API Calls for Billboards" /> */}
-            {/* <Separator /> */}
-            {/* <ApiList entityName="billboards" entityIdName="billboardId" /> */}
+            <Heading title="API" description="API Calls for Billboards" />
+            <Separator />
+            <ApiList entityName="billboards" entityIdName="billboardId" />
         </>
     );
 };
